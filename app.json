@@ -1,0 +1,22 @@
+{
+  "expo": {
+    "name": "FoodHub",
+    "slug": "foodhub",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "light",
+    "newArchEnabled": true,
+    "android": {
+      "adaptiveIcon": {
+        "backgroundColor": "#E63946"
+      },
+      "package": "com.foodhub.miniproject"
+    },
+    "ios": {
+      "bundleIdentifier": "com.foodhub.miniproject"
+    },
+    "web": {
+      "bundler": "metro"
+    }
+  }
+}
