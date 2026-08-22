@@ -40,13 +40,7 @@ export default function HomeScreen({ navigation }: Props) {
           <Text style={styles.cartText}>🛒 My Cart ({totalItems})</Text>
         </Pressable>
 
-        <View style={styles.infoBox}>
-          <Text style={styles.infoTitle}>Mini Task Features</Text>
-          <Text style={styles.infoText}>✓ React Native components</Text>
-          <Text style={styles.infoText}>✓ React Navigation</Text>
-          <Text style={styles.infoText}>✓ State management & validation</Text>
-          <Text style={styles.infoText}>✓ Passing data between screens</Text>
-        </View>
+  
       </ScrollView>
     </SafeAreaView>
   );
@@ -68,8 +62,6 @@ const styles = StyleSheet.create({
   secondary: { backgroundColor: "#1D3557", padding: 17, borderRadius: 15, marginTop: 12 },
   secondaryText: { color: "#FFF", textAlign: "center", fontSize: 17, fontWeight: "900" },
   cart: { backgroundColor: "#FFF", padding: 16, borderRadius: 15, marginTop: 12, borderWidth: 1, borderColor: "#D9DEE5" },
-  cartText: { color: "#1D3557", textAlign: "center", fontWeight: "900", fontSize: 16 },
-  infoBox: { backgroundColor: "#FFF", borderRadius: 18, padding: 18, marginTop: 25 },
-  infoTitle: { fontSize: 18, fontWeight: "900", color: "#1D3557", marginBottom: 9 },
-  infoText: { color: "#59636E", marginTop: 5 }
+  cartText: { color: "#1D3557", textAlign: "center", fontWeight: "900", fontSize: 16 }
+  
 });
