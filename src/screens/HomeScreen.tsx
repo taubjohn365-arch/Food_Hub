@@ -50,7 +50,10 @@ export default function HomeScreen({ navigation }: Props) {
   </Pressable>
 </View>
 
-        <Pressable style={styles.primary} onPress={() => navigation.navigate("FoodList")}>
+        <Pressable
+  style={styles.primary}
+  onPress={() => navigation.navigate("FoodList", {})}
+>
           <Text style={styles.primaryText}>Browse Food Menu →</Text>
         </Pressable>
 
