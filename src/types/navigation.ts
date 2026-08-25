@@ -9,7 +9,7 @@ export type Food = {
 
 export type RootStackParamList = {
   Home: undefined;
-  FoodList: undefined;
+  FoodList: { category?: string };
   FoodDetails: { food: Food };
   AddOrder: undefined;
   Cart: undefined;

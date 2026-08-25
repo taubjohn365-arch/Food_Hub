@@ -21,12 +21,34 @@ export default function HomeScreen({ navigation }: Props) {
         <Text style={styles.heading}>What are you craving?</Text>
 
         <View style={styles.categories}>
-          {["🍔 Burgers", "🍕 Pizza", "🍗 Chicken", "🥤 Drinks"].map((item) => (
-            <Pressable key={item} style={styles.category} onPress={() => navigation.navigate("FoodList")}>
-              <Text style={styles.categoryText}>{item}</Text>
-            </Pressable>
-          ))}
-        </View>
+  <Pressable
+    style={styles.category}
+    onPress={() => navigation.navigate("FoodList", { category: "Burgers" })}
+  >
+    <Text style={styles.categoryText}>🍔 Burgers</Text>
+  </Pressable>
+
+  <Pressable
+    style={styles.category}
+    onPress={() => navigation.navigate("FoodList", { category: "Pizza" })}
+  >
+    <Text style={styles.categoryText}>🍕 Pizza</Text>
+  </Pressable>
+
+  <Pressable
+    style={styles.category}
+    onPress={() => navigation.navigate("FoodList", { category: "Chicken" })}
+  >
+    <Text style={styles.categoryText}>🍗 Chicken</Text>
+  </Pressable>
+
+  <Pressable
+    style={styles.category}
+    onPress={() => navigation.navigate("FoodList", { category: "Drinks" })}
+  >
+    <Text style={styles.categoryText}>🥤 Drinks</Text>
+  </Pressable>
+</View>
 
         <Pressable style={styles.primary} onPress={() => navigation.navigate("FoodList")}>
           <Text style={styles.primaryText}>Browse Food Menu →</Text>
